@@ -1,0 +1,29 @@
+FASTAPi = framework perfomatico rapido e pratico
+
+Quem é o FastAPi?
+Framework FastAPI, alta performance, fácil de aprender,fácil de codar, pronto para produção. FastAPI é um moderno e rápido (alta performance)
+framework web para construção de APIs com Python 3.6 ou superior, baseado nos type hints padrões do Python.
+
+Async
+Código assíncrono apenas significa que a linguagem tem um jeito de dizer para o computador / programa que em certo ponto, ele terá que esperar
+por algo para finalizar em outro lugar
+
+DESAFIO =   construa uma tabela(atleta) com dois parâmetro: nome, cpf
+            retorno customizado:    - atleta
+                                        - nome
+                                        - centro_treinamento
+                                        - categoria
+
+            customizar exceção: - sqlalchemy.exc.IntegrityError e devolver a seguinte mensagem: “Já existe um atleta cadastrado com o cpf: x”
+                                     - status_code: 303
+            Adicionar paginação utilizando a lib: fastapi-pagination
+                                                    - limit e offset
+
+ETAPA 1 = PACOTES
+python -m venv workoutapi
+cd workoutapi
+cd Scripts
+.\activate
+.\'API - TDD'\fastapi\env_workout_api\Scripts\activate
+python -m pip install fastapi uvicorn sqlalchemy pydantic --user
+python -m uvicorn workout_api.main:app --reload
